@@ -1,0 +1,184 @@
+{
+  "version": 1,
+  "updatedAt": "2025-12-04",
+  "rules": [
+    { "name": "BaiduDetail", "url": "xueshu.baidu.com/usercenter/paper/show" },
+    { "name": "WikipediaDetail", "urlRegex": ["wikipedia\\.org\\/.+\\/"] },
+
+    { "name": "CnkiDetail", "custom": "CnkiDetail" },
+    { "name": "CnkiOverSeaDetail", "custom": "CnkiOverSeaDetail" },
+    { "name": "CnkiAISearch", "custom": "CnkiAISearch" },
+    { "name": "CnkiClassic", "custom": "CnkiClassic" },
+    { "name": "CnkiSentence", "selectors": ["#gridTable dl.result-detail-list dd div.middle"] },
+
+    { "name": "SpringerDetail", "custom": "SpringerDetail" },
+    { "name": "Springer", "custom": "Springer" },
+    { "name": "Springeropen", "url": "www.springeropen.com/search?query" },
+    { "name": "SpringerNew", "custom": "SpringerNew" },
+
+    { "name": "IeeeDetail", "custom": "IeeeDetail" },
+
+    { "name": "WOSDetail", "custom": "WOSDetail" },
+    { "name": "WOS", "custom": "WOS" },
+    { "name": "WOSJCR", "selectors": [".main-block-container .bottom-space .incites-jcr3-fe-table .table-section > mat-table"] },
+    { "name": "WOSJCRDetail", "selectors": [".incites-jcr3-fe-journal-profile #main-content > .summary-tile > .title"] },
+
+    { "name": "AminerDetail", "url": "www.aminer.cn/pub/" },
+
+    { "name": "Pubmed", "custom": "Pubmed" },
+    { "name": "PubmedDetail", "custom": "PubmedDetail" },
+
+    { "name": "ReadPaperDetail", "url": "readpaper.com/paper/" },
+    { "name": "ReadPaper", "url": "readpaper.com/search/" },
+
+    { "name": "ScienceDirectDetail", "custom": "ScienceDirectDetail" },
+    { "name": "ScienceDirect", "custom": "ScienceDirect" },
+
+    { "name": "Embase", "selectors": ["#search_results div.clearfix #recordsFound li div.resultPreviewItem"] },
+    { "name": "EmbaseDetail", "selectors": ["div[class*='RecordDetailsContent_content'] span.es-font-gulliver"] },
+
+    { "name": "Scopus", "selectors": ["#resultsBody #srchResultsList tr.searchArea"] },
+    { "name": "NewScopus", "selectors": ["#container > micro-ui > document-search-results-page > .micro-ui-namespace > section"] },
+    { "name": "ScopusDetail", "selectors": ["#doc-details-page-container div.row > div.col > els-typography.hydrated"] },
+    { "name": "NewScopusDetail", "selectors": ["#doc-details-page-container > article"] },
+    { "name": "ScopusAuthor", "selectors": ["#scopus-author-profile-page-control-microui__general-information-content"] },
+
+    { "name": "YuntsgPubmedDetail", "url": "pm.yuntsg.com/details.html", "selectors": [".main .detailsMain .detailsLeft a.detTitle"] },
+    { "name": "YuntsgPubmed", "url": "pm.yuntsg.com/searchList", "selectors": ["body div.bigScroll div.searchListDiv > div.searchMainDiv > div.searchListMain.wordMs  div.listMian ul.searchList"] },
+    { "name": "YuntsgDetail", "url": "xueshu.yuntsg.com/details.html", "selectors": ["#con_bottom #titleBtn"] },
+    { "name": "YuntsgXueshu", "url": "xueshu.yuntsg.com/result.html?active=xueshu", "selectors": ["div.con3_list #xueshuText #xueshulist_ul"] },
+    { "name": "Yuntsgen", "url": "xueshu.yuntsg.com/result.html?active=en", "selectors": [".con3_list #textView #list_ul p[style='width: 85%;']"] },
+    { "name": "Yuntsgcn", "url": "xueshu.yuntsg.com/result.html?active=cn", "selectors": [".con3_list #textView #list_ul p[style='color:#615f63']"] },
+
+    { "name": "Google", "custom": "Google" },
+    { "name": "GoogleCitations", "custom": "GoogleCitations" },
+
+    { "name": "Baidu", "url": "xueshu.baidu.com/s?" },
+    { "name": "Aminer", "urls": ["www.aminer.cn/search", "www.aminer.cn/profile"] },
+    { "name": "Dblp", "urls": ["dblp.uni-trier.de/", "dblp.org/", "dblp.dagstuhl.de/"], "selectors": ["#completesearch-publs div.body"] },
+    { "name": "Ieee", "url": "ieeexplore.ieee.org/search/searchresult.jsp", "selectors": ["xpl-results-list div.List-results-items"] },
+
+    { "name": "Huayi", "selectors": ["#maincontent div.right_mianNEWSe table.jian_mu_list"] },
+    { "name": "XMOL", "selectors": ["#mianBody div.magazine-senior-search-content div.magazine-senior-search-results-list"] },
+    { "name": "XMOLSquare", "selectors": ["#mianBody  div.magazine-model-content-new"] },
+    { "name": "XMOLDetail", "selectors": ["#content > div.magazine-gridecontent > div.maga-content"] },
+
+    { "name": "Wangfang", "selectors": ["div.top-control-bar div.sort-item"] },
+    { "name": "WangfangDetail", "selectors": ["div.detailIntro div.pd20 div.detailTitle"] },
+
+    { "name": "WOSSelect", "selectors": ["app-journal-search-results div.ng-star-inserted"] },
+    { "name": "SpringerSelect", "selectors": ["div.container-type-manuscript-details div.container"] },
+    { "name": "SpringerSelectDetail", "url": "journalsuggester.springer.com/select-journal?journalId" },
+    { "name": "JournalFinder", "url": "journalfinder.elsevier.com" },
+
+    { "name": "CnkiSpace", "selectors": [".resault-cont .filtrate-wrap .filtrate .ti"] },
+    { "name": "Weipu", "custom": "Weipu" },
+    { "name": "WeipuDetail", "custom": "WeipuDetail" },
+
+    { "name": "Semantic", "selectors": ["#main-content div.flex-item.flex-item--width-66.flex-item__left-column div.result-page "] },
+    { "name": "SemanticDetail", "selectors": ["#main-content  div.flex-item.flex-item--width-66.flex-item__left-column > div > ul.flex-row-vcenter.paper-meta"] },
+
+    { "name": "OldCnki", "custom": "OldCnki" },
+    { "name": "ResearchGateDetail", "url": "researchgate.net/publication/" },
+    { "name": "CnkiAuthor", "custom": "CnkiAuthor" },
+    { "name": "CnkiOverSeaAuthor", "selectors": ["#zzwx", "#frame2"] },
+
+    { "name": "Jstor", "selectors": ["#search-results-vue-mount div.search-results-area div.search-results-layout__content ol.search-results-layout__content__list "] },
+    { "name": "Ei", "selectors": ["div.no-padding-left #results-region .result-row"] },
+    { "name": "EiDetail", "selectors": ["#main-article > h2.MuiTypography-root"] },
+    { "name": "Duke", "custom": "Duke" },
+    { "name": "Wiley", "custom": "Wiley" },
+
+    { "name": "NudtChaoxing", "selectors": [".mainBx .middleBox .newSearchArticleBox .searchLIst #mainlist"] },
+    { "name": "NudtChaoxingDetail", "selectors": [".cardLeft > .savelist > .savelist_con .card_name"] },
+    { "name": "Nssd", "selectors": ["#app .center-content .content .journal-right .jour-pic ul.clr .el-checkbox-group"] },
+    { "name": "NssdDetail", "selectors": [".hot-doc .book-pic .b-content #h2_title_c"] },
+    { "name": "Proquest", "selectors": [".resultsPageSpecific .row .lor-wrapper .resultListContainer ul.resultItems"] },
+    { "name": "ProquestDetail", "selectors": [".header_docview_page .row #authordiv > span.titleAuthorETC.jnlArticle"] },
+
+    { "name": "CambridgeDetail", "custom": "CambridgeDetail" },
+    { "name": "Oxford", "custom": "Oxford" },
+    { "name": "OxfordDetail", "custom": "OxfordDetail" },
+    { "name": "Edinburge", "selectors": ["#allTabsContainer > div.clear.search-results-body form ol.search-results "] },
+    { "name": "EdinburgeDetail", "url": "www.tandfonline.com/doi/" },
+
+    { "name": "Duxiu", "selectors": ["#wrap .centerMain #searchinfo span.leftF"] },
+    { "name": "Duxiu2", "selectors": [".advSearch > .searchForm > #newf1 "] },
+    { "name": "CnkiScholar", "selectors": ["#__next > div > div.search_img_bg_d > div.mainC > div.content-box > div.rightC > div.mainContent > div.searchResultContainer"] },
+    { "name": "CnkiScholarDetail", "selectors": ["#__next > div > div.detail_detail-main__11Hij > div.detail_content__3IojM > div.detail_content-left__2vUAX > div > div.undefined.clearfix"] },
+    { "name": "ConnectedPapers", "selectors": ["#desktop-app > div.basic-page.main-router > div.search-container"] },
+    { "name": "ConnectedPapersDetail", "selectors": ["#desktop-app div.main-router  .abtract-scrollbox.shadowed-box.bg-white div.metadata.publication"] },
+
+    { "name": "onlinelibraryWiley", "custom": "onlinelibraryWiley" },
+    { "name": "onlinelibraryWileyDetail", "custom": "onlinelibraryWileyDetail" },
+    { "name": "apsDetail", "custom": "apsDetail" },
+    { "name": "APAPsycnet", "url": "psycnet.apa.org/search/results?id" },
+    { "name": "APAPsycnetmostcited", "urls": ["psycnet.apa.org/PsycARTICLES/mostcited", "psycnet.apa.org/PsycARTICLES/mostdl"] },
+    { "name": "APAPsycnetDetail", "urls": ["psycnet.apa.org/search/display?id=", "psycnet.apa.org/record/"] },
+
+    { "name": "medWangFang", "url": "med.wanfangdata.com.cn/Paper/Search", "selectors": ["#paper-content-wrap > .mod-results > #resultsList > .item > .item-content"] },
+    { "name": "medWangFangMirror", "selectors": ["#aspnetForm #content #content_div #narrowContainer"] },
+    { "name": "medWangFangDetail", "url": "med.wanfangdata.com.cn/Paper/Detail", "selectors": [".main > .container > .newContext > .content"] },
+    { "name": "pubscholar", "url": "pubscholar.cn/explore", "selectors": [".ContentLayout .ContentLayout__mainColumn > .AppSearchMain > .AppSearchTabContent > .List"] },
+    { "name": "pubscholarDetail", "url": "pubscholar.cn/articles/", "selectors": [".ArticleContentLayout__mainColumn > .Article > .ArticleContent > .ArticleInfo > h1.ArticleInfo__title"] },
+    { "name": "mdpi", "custom": "mdpi" },
+    { "name": "mdpiDetail", "custom": "mdpiDetail" },
+
+    { "name": "rsc", "url": "pubs.rsc.org/en/results?searchtext=" },
+    { "name": "rscDetail", "url": "pubs.rsc.org/en/content/articlelanding/" },
+    { "name": "acs", "url": "pubs.acs.org/action/doSearch?", "selectors": ["#pb-page-content .issue-item .issue-item_metadata"] },
+    { "name": "acsDetail", "custom": "acsDetail" },
+
+    { "name": "yiigle", "url": "www.yiigle.com/Paper/Search", "selectors": [".s_searchResult > .s_searchResult_l > .el-row > div[role='group']"] },
+    { "name": "yiigle2", "selectors": [".search-result-main-left > .result__main > .list-item > .list-item-main "] },
+    { "name": "yiigleDetail", "url": "rs.yiigle.com/cmaid/" },
+    { "name": "spis", "url": "spis.hnlat.com/scholar/list" },
+    { "name": "spisDetail", "url": "spis.hnlat.com/scholar/detail/" },
+    { "name": "spisJournal", "url": "spis.hnlat.com/journal/doSearch?" },
+    { "name": "heinonline", "selectors": [".control-group .controls .section_type_article_b .lucene_search_result_b"] },
+
+    { "name": "oldPubmed", "custom": "oldPubmed" },
+    { "name": "oldPubmedDetail", "url": "www.ncbi.nlm.nih.gov/pmc/articles" },
+    { "name": "nature", "custom": "nature" },
+    { "name": "natureDetail", "custom": "natureDetail" },
+
+    { "name": "letpub", "url": "www.letpub.com.cn/index.php?journalid=" },
+    { "name": "philpapers", "url": "philpapers.org/s/" },
+    { "name": "philpapersDetail", "url": "philpapers.org/rec/" },
+    { "name": "pubmedProSearch", "url": "www.pubmed.pro/search/" },
+
+    { "name": "chkdx", "custom": "chkdx" },
+    { "name": "qxmd", "urls": ["read.qxmd.com", "read.qxmd.com/search/paper/", "read.qxmd.com/journal/"] },
+    { "name": "qxmdjournals", "url": "read.qxmd.com/journals" },
+    { "name": "lensscholar", "url": "www.lens.org/lens/search/scholar/" },
+
+    { "name": "journalfinderwiley", "url": "journalfinder.wiley.com/search?" },
+    { "name": "journalfinderspringer", "url": "link.springer.com/journals/journal-finder" },
+    { "name": "authorservicestaylorandfrancis", "url": "authorservices.taylorandfrancis.com/publishing-your-research/choosing-a-journal/journal-suggester/" },
+
+    { "name": "citexsjournalQuery", "url": "www.citexs.com/journalQuery" },
+    { "name": "citexsjournalQuery2", "url": "www.citexs.com/journalAdviceList" },
+    { "name": "citexsjournalQuery3", "urls": ["www.citexs.com/journalChinaQuery", "www.citexs.com/journalEarlyWarning"] },
+    { "name": "citexsjournalQuery4", "url": "www.citexs.com/allSearch" },
+    { "name": "citexsjournalQuery5", "url": "www.citexs.com/Search" },
+    { "name": "citexsjournalQuery6", "url": "www.citexs.com/Paperpicky" },
+
+    { "name": "amend", "url": "amend.fenqubiao.com/Paper/Search" },
+    { "name": "yanxue", "custom": "yanxue" },
+    { "name": "medreading", "url": "www.medreading.cn" },
+    { "name": "fmrs", "url": "fmrs.metstr.com/search", "selectors": ["#app > .app-container > .main > .search-main-list > .list-item"] },
+
+    { "name": "ebsco", "selectors": [".resultList > #resultListControl #accessibleMainContent"] },
+    { "name": "epubs", "url": "epubs.siam.org/action/doSearch?" },
+    { "name": "epubsDetail", "url": "epubs.siam.org/doi/" },
+    { "name": "sinomed", "url": "www.sinomed.ac.cn/crossSearch.do?searchwordwm", "selectors": [".txt_left #result-items .recoreddiv .jg-labs"] },
+    { "name": "sagepub", "url": "journals.sagepub.com/action/doSearch?AllField" },
+    { "name": "biomedcentral", "url": "www.biomedcentral.com/search?query=" },
+
+    { "name": "consensus", "url": "consensus.app/search/" },
+    { "name": "SciEngineDetail", "url": "www.sciengine.com/CSB/doi/" },
+    { "name": "PMC", "url": "pmc.ncbi.nlm.nih.gov/articles/PMC" },
+    { "name": "Frontiersin", "url": "www.frontiersin.org/journals" },
+    { "name": "NCBIGene", "url": "www.ncbi.nlm.nih.gov/gene/" }
+  ]
+}
