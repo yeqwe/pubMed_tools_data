@@ -1,0 +1,16 @@
+{
+  "version": "2025.3.med",
+  "build_date": "2026-08-29",
+  "records": 23059,
+  "sha256": "c5a62db2119744660c0e6700408385f2b071538ef3fe5aa669ec520c828c4964",
+  "file": "journals.min.json",
+  "size": 7044576,
+  "size_gz": 1368623,
+  "source": {
+    "base": "中科院IF 2025（完整版）",
+    "jcr": "ShowJCR JCR2025（2024年影响因子）",
+    "warning": "GJQKYJMD 2024/2025",
+    "xr": "新锐期刊分区表 2026",
+    "medline": "J_Medline.txt (14245 条匹配)"
+  }
+}
